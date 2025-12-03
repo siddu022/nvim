@@ -1,5 +1,7 @@
 -- bootstrap lazy.nvim, LazyVim, and your plugins
 require("config.lazy")
+-- Add this to your LazyVim configuration
+require("lspconfig").jdtls.setup({})
 
 -- Set cursor shapes for different modes
 vim.opt.guicursor = {
@@ -24,3 +26,4 @@ vim.cmd([[
     autocmd TextChanged,TextChangedI * silent! write
   augroup END
 ]])
+
